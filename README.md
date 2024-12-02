@@ -15,3 +15,13 @@ Interpreted Languages are execute the code directly and line by line by an inter
 string, number, boolean, null, undefined, and symbol
 
 Symbol is a unique, immutable and not convertible value that can be used to create unique identifiers for objects.
+
+ # Scope or Variable Scope
+
+Visibility of a variable.
+
+# Closures
+
+Functions that have access to the outer function's scope even after the outer function has finished execuing. They are useful for encapsulating private data.
+
+https://codefinity.com/blog/Top-50-Must-Know-JavaScript-Interview-Questions

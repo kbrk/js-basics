@@ -19,6 +19,7 @@ function funcVar() {
  */
 let b = 2;
 function funcLet() {
+    let blockVar = "blackVar";
     try {
         console.log(b);
         b = 4; //reassignment
@@ -34,6 +35,15 @@ function funcLet() {
 
 funcLet();
 
+try {
+    console.log("Var in Block: ", blockVar);
+} catch (e) {
+    if (!(e instanceof Error)) {
+        e = new Error(e);
+    }
+    console.error("Error in funcConst: ", e.message);
+}
+
 const c = 123;
 
 /**
@@ -43,13 +53,13 @@ function funcConst() {
     try {
         // console.log(c); // Cannot access 'c' before initialization
         const d = 22;
-        d = 44; //cannot be reassigned
+        //d = 44; //cannot be reassigned
         //const d = 11; //cannot be redeclared
     } catch (e) {
         if (!(e instanceof Error)) {
             e = new Error(e);
         }
-        console.error(e.message);
+        console.error("Error in funcConst: ", e.message);
     }
 }
 
