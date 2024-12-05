@@ -25,3 +25,19 @@ Visibility of a variable.
 Functions that have access to the outer function's scope even after the outer function has finished execuing. They are useful for encapsulating private data.
 
 https://codefinity.com/blog/Top-50-Must-Know-JavaScript-Interview-Questions
+
+# Event Loop
+
+A mechanism that allows JS handle asyncronous operations like setTimeout or fetching data without a service interruption. To do this, JS puts a callback function in a queue for every event.
+
+# Call Stack
+
+When a function is called it is added to a Call Stack and when the function is done it is removed from the stack.
+
+# WebAPI
+
+Set of functionalities for web browsers or web servers such as timer, fetcha api, ui events, DOM manupilations, push notification, web sockets and so on.
+
+# Task Queue 
+
+Stores callbacks for asynchronous operations that are ready to be executed. The callbacks are sent to the call stack using the FIFO principle.
