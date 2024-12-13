@@ -1,3 +1,5 @@
+//Functions that have access to the outer function's scope even after the outer function has finished execuing. They are useful for encapsulating private data.
+
 function outerFunc(outerVar) {
     /**
      * closure function
