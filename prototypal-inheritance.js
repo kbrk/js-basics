@@ -48,7 +48,7 @@ Insects.lives = 'up to 50 years';
 
 const ladybug = new Insects();
 console.log(ladybug);
-console.log(Insects.prototype.lives+" is undefined.");
+console.log(Insects.prototype.lives + " is undefined.");
 console.log(`Ladybug still lives ${ladybug.lives} . Because the ladybug is the object of the Insects function.`);
 
 
@@ -56,8 +56,23 @@ console.log(`Ladybug still lives ${ladybug.lives} . Because the ladybug is the o
 const person = {
     say() {
         return 'Hi';
+    },
+    make() {
+        return 'Inventions'
     }
 }
 const she = {};
 Object.setPrototypeOf(she, person);
 console.log(she.say());
+
+const he = {
+    say() {
+        return 'Hi, hello.';
+    },
+    __proto__: person
+}
+
+console.log(he.say(), he.make()); 
+// say is an own property on he.
+// make is not an own property on he but it is on person (the prototype)
+// JS looks for the given property in all nested prototypes.  
