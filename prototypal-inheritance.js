@@ -74,5 +74,5 @@ const he = {
 
 console.log(he.say(), he.make()); 
 // say is an own property on he.
-// make is not an own property on he but it is on person (the prototype)
+// make is not an own property on he but it is on person (the prototype).
 // JS looks for the given property in all nested prototypes.  

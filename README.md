@@ -41,3 +41,6 @@ Set of functionalities for web browsers or web servers such as timer, fetcha api
 
 Stores callbacks for asynchronous operations that are ready to be executed. The callbacks are sent to the call stack using the FIFO principle.
 
+## Promise
+Promise is an object to handle asynchronous processes that take some time like API calls, file loading etc. It contains pending, resolved and rejected stages. The pending stage is the stage where the process is running. The resolved means that the process was completed successfully, and the result was returned. The rejected means, the process, somehow, provide an error.  
+
