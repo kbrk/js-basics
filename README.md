@@ -44,3 +44,5 @@ Stores callbacks for asynchronous operations that are ready to be executed. The 
 ## Promise
 Promise is an object to handle asynchronous processes that take some time like API calls, file loading etc. It contains pending, resolved and rejected stages. The pending stage is the stage where the process is running. The resolved means that the process was completed successfully, and the result was returned. The rejected means, the process, somehow, provide an error.  
 
+## Destructive Assignment
+Destructing assignment is a JS expression that unpacks an object properties into variables.
