@@ -16,3 +16,4 @@ console.log(a, b, c, d, rest);
 const arr = ["arrA", "arrB", "arrC", "arrD", "arrE"];
 let [arrA, arrB, arrC, ...arrRest] = arr;
 console.log(arrA, arrB, arrC, arrRest);
+

@@ -46,3 +46,12 @@ Promise is an object to handle asynchronous processes that take some time like A
 
 ## Destructive Assignment
 Destructing assignment is a JS expression that unpacks an object properties into variables.
+
+## Functions
+
+* Regular functions get arguments by default.
+* Arrow functions don't get arguments default
+* In regular functions of an object or class 'this' represents the object.
+* In arrow functions of an object or class 'this' does not represents the object.
+* In event handlers the 'this' in a regular function represents the object of the event.  
+* *In event handlers the 'this' in an arrow function represents the Window object.  
