@@ -4,7 +4,8 @@
 
 const div = document.getElementById('buttonDiv');
 div.addEventListener('click', function(event){
-    if(event.target.tagName === 'BUTTON'){
-        console.log('A button was clicked.');
+    const element = event.target;
+    if(element.tagName === 'BUTTON'){
+        event.target.style.background = '#' + Math.floor(Math.random() * 16777215).toString(16);
     }
 });
