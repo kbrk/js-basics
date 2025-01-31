@@ -58,3 +58,6 @@ Destructing assignment is a JS expression that unpacks an object properties into
 
 ## Higher Order Function
 A function that takes functions as arguments or returns functions as a result.
+
+## Event Delegation
+Event Delegation allows a single event handler attached to a parent to occur on the parent's all-defined children instead of attaching individual event listeners for every element. It helps to reduce memory usage and improve page loading performance.
